@@ -267,16 +267,3 @@ Enterprise-grade Kubernetes cluster deployment with built-in security and observ
 - Adjust `LOADBALANCER_IP_RANGE` for service IPs
 - Add custom audit policies in `config-overrides/`
 
-## Support
-
-Open issues for bug reports or feature requests. PRs welcome!
-```
-
-**Best Practices for GitHub**:
-1. Add `.gitignore` for logs/credentials
-2. Include LICENSE file
-3. Set up GitHub Actions for validation
-4. Add issue templates
-5. Create detailed Wiki pages
-
-This implementation meets enterprise security standards while maintaining readability for public repositories.
