@@ -1,8 +1,9 @@
 
+# phase 1:
+
 **GitHub-Ready Enterprise K3s Cluster Deployment Script**  
 *(Professional Documentation & Implementation)*  
 
-# phase 1:
 ```
 #!/bin/bash
 # =================================================================
