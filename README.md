@@ -413,10 +413,8 @@ main "$@"
 This updated architecture includes **Kube-VIP** for internal load balancing and failover, ensuring a robust, scalable, and secure Kubernetes deployment suitable for production environments. The diagram and detailed explanation ensure clarity for both technical and non-technical stakeholders.
 
 
-**K3s High Availability Cluster Deployment**:
 
-```markdown
-# K3s High Availability Cluster Deployment
+## K3s High Availability Cluster Deployment :
 
 Enterprise-grade Kubernetes cluster deployment with built-in security and observability.
 
@@ -437,25 +435,25 @@ Enterprise-grade Kubernetes cluster deployment with built-in security and observ
 
 1. Clone repository:
 
-   ```
-   git clone https://github.com/marco1370/k3s
-   cd k3s
-   ```
+```   
+git clone https://github.com/marco1370/k3s
+cd k3s
+```
 
 2. Configure variables in `deploy.sh`:
 
-   # Network Configuration
+# Network Configuration
 ```
-   MASTER_NODES=("192.168.3.21" "192.168.3.22" "192.168.3.23")
-   WORKER_NODES=("192.168.3.24" "192.168.3.25")
-   LOADBALANCER_NODE="192.168.3.100"
+MASTER_NODES=("192.168.3.21" "192.168.3.22" "192.168.3.23")
+WORKER_NODES=("192.168.3.24" "192.168.3.25")
+LOADBALANCER_NODE="192.168.3.100"
 ```
 
 3. Execute deployment:
 
 ```
-   chmod +x deploy.sh
-   ./deploy.sh
+chmod +x deploy.sh
+./deploy.sh
   ```
 
 
@@ -464,4 +462,38 @@ Enterprise-grade Kubernetes cluster deployment with built-in security and observ
 - Modify `SSL_CERT_EXPIRE` for certificate lifetime
 - Adjust `LOADBALANCER_IP_RANGE` for service IPs
 - Add custom audit policies in `config-overrides/`
+
+
+
+## Key Features
+
+### 1 - Master Nodes as Workers:
+
+Master nodes can schedule user workloads (Pods, Deployments, etc.)
+
+Removed taints to allow scheduling on master nodes
+
+Ensures maximum resource utilization
+
+### 2 - HAProxy Load Balancer:
+
+ * External access point for the Kubernetes API
+
+ * SSL termination for secure communication
+
+ * Load balancing across master nodes
+
+### 3 - MetalLB:
+
+ * Provides LoadBalancer services for Kubernetes
+
+ * Manages IP address allocation from the specified range
+
+ * Uses L2 advertisement for IP assignment
+
+### 4 - User Workloads:
+
+ * Deployments, StatefulSets, DaemonSets, etc.
+
+ * Accessible via LoadBalancer IPs or ClusterIPs
 
