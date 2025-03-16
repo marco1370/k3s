@@ -219,7 +219,7 @@ main "$@"
 
 
 
-**Suggested README.md Content**:
+**K3s High Availability Cluster Deployment**:
 
 ```markdown
 # K3s High Availability Cluster Deployment
