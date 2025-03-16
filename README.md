@@ -247,11 +247,11 @@ main "$@"
 (Complete K3s HA Cluster with HAProxy and MetalLB and Kube-VIP)
 
 ```
-                            +--------------------+     +-------------------+       +-------------------+
-                            |   Master Node 1    |       |   Master Node 2   |      |   Master Node 3   |
-                            |  (K3s Control      |<----->|  (K3s Control     |<---->|  (K3s Control     |
-                            |   Plane + Kube-VIP)|      |   Plane + Kube-VIP)|      | Plane + Kube-VIP) |
-                            +-------------------+       +-------------------+       +-------------------+
+          +----------------------------+         +----------------------------+       +-----------------------------+
+          |   Master Node 1             |       |   Master Node 2             |       |   Master Node 3             |
+          |  (K3s Control               |<----->|  (K3s Control               |<----->|  (K3s Control               |
+          |   Plane + Kube-VIP + worker)|       |   Plane + Kube-VIP + worker)|       | Plane + Kube-VIP + worker)  |
+          +---------------- ------------+        +-----------------------------+      +-----------------------------+
                                     |                         |                         |
                                     |                         |                         |
                                     v                         v                         v
