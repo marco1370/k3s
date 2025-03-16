@@ -6,7 +6,7 @@
 # =================================================================
 # K3s High Availability Cluster Deployment Script
 # Author: Your Name
-# Repository: https://github.com/yourusername/k3s-ha-cluster
+# Repository: https://github.com/marco1370/k3s
 # License: MIT
 # =================================================================
 
@@ -243,7 +243,7 @@ Enterprise-grade Kubernetes cluster deployment with built-in security and observ
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/yourusername/k3s-ha-cluster
+   git clone https://github.com/marco1370/k3s
    cd k3s-ha-cluster
    ```
 
