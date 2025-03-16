@@ -6,7 +6,7 @@
 # =================================================================
 # K3s High Availability Cluster with HAProxy (SSL Self-Signed)
 # Author: Your Name
-# Repository: https://github.com/yourusername/k3s-ha-cluster
+# Repository: https://github.com/marco1370/k3s
 # License: MIT
 # =================================================================
 
