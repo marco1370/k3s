@@ -2,7 +2,7 @@
 # =================================================================
 # K3s High Availability Cluster Deployment Script
 # Author: Your Name
-# Repository: https://github.com/yourusername/k3s-ha-cluster
+# Repository: https://github.com/marco1370/k3
 # License: MIT
 # =================================================================
 
