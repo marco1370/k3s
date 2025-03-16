@@ -217,15 +217,7 @@ main "$@"
 
 ---
 
-**Repository Structure**:  
-```
-/k3s-ha-cluster
-├── deploy.sh             # This script
-├── README.md             # Documentation
-├── config-overrides/     # Custom configurations
-├── audit-policies/       # Kubernetes audit policies
-└── examples/             # Sample workloads
-```
+
 
 **Suggested README.md Content**:
 
